@@ -1,0 +1,12 @@
+int main()
+{
+    try {cout << abc(2,0,5) << endl};
+    catch(char* e)
+    {
+        cout << "The parameters to abc were 2, 0, and 5" << endl;
+        cout << "An exception has been throw" << endl;
+        cout << e << endl;
+        return 1;
+    }
+    return 0;
+}
