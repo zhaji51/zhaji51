@@ -1,0 +1,13 @@
+System.out.println("SampleUserManagerImpl.doAddUser - This operation is not implemented !");  
+		 
+		return updated; 
+ 
+  	}   
+ 
+	protected void doDisableUser(String userId) throws UserProfileResourceException { 
+	 
+		//This is not an allowed operation.If this is not the case add the code to 
+    // implement it 
+		System.out.println("SampleUserManagerImpl.doDisableUser - This operation is not implemented !");  
+		 
+	} 
