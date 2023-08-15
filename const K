@@ -1,0 +1,18 @@
+Node* Find(const K& key)
+		{
+			if (_tables.size() == 0)
+			{
+				return nullptr;
+			}
+			size_t hashi = key % _tables.size();
+			Node* cur = _tables[hashi];
+			while (cur)
+			{
+				if (cur->_kv.first == key)
+				{
+					return cur;
+				}
+				cur = cur->_next;
+			}
+			return nullptr;
+		}
