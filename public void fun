@@ -1,0 +1,27 @@
+public class Percent {
+    public int a=1;
+    public Percent(){
+        super();
+        fun();
+    }
+    public void fun(){
+        System.out.println("Percent fun");
+    }
+}
+public class Child extends Percent {
+    public int a=2;
+    public Child(){
+        super();
+    }
+    public void fun(){
+        System.out.println("Child fun");
+        System.out.println(a);
+    }
+    public static void main(String[] args) {
+        /**
+         * Child fun
+         * 0
+         */
+        Child child=new Child();
+    }
+}
